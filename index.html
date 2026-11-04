@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10131c" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="calculator" aria-label="Calculator">
+      <h1>Calculator</h1>
+      <output class="display" id="display" aria-live="polite" aria-atomic="true">0</output>
+
+      <div class="keys" aria-label="Calculator keys">
+        <button class="key utility" type="button" data-action="clear" aria-label="Clear">AC</button>
+        <button class="key utility" type="button" data-action="sign" aria-label="Change sign">±</button>
+        <button class="key utility" type="button" data-action="percent" aria-label="Percent">%</button>
+        <button class="key operator" type="button" data-action="operator" data-value="/" aria-label="Divide">÷</button>
+
+        <button class="key" type="button" data-action="digit" data-value="7">7</button>
+        <button class="key" type="button" data-action="digit" data-value="8">8</button>
+        <button class="key" type="button" data-action="digit" data-value="9">9</button>
+        <button class="key operator" type="button" data-action="operator" data-value="*" aria-label="Multiply">×</button>
+
+        <button class="key" type="button" data-action="digit" data-value="4">4</button>
+        <button class="key" type="button" data-action="digit" data-value="5">5</button>
+        <button class="key" type="button" data-action="digit" data-value="6">6</button>
+        <button class="key operator" type="button" data-action="operator" data-value="-" aria-label="Subtract">−</button>
+
+        <button class="key" type="button" data-action="digit" data-value="1">1</button>
+        <button class="key" type="button" data-action="digit" data-value="2">2</button>
+        <button class="key" type="button" data-action="digit" data-value="3">3</button>
+        <button class="key operator" type="button" data-action="operator" data-value="+" aria-label="Add">+</button>
+
+        <button class="key utility" type="button" data-action="backspace" aria-label="Delete last digit">⌫</button>
+        <button class="key" type="button" data-action="digit" data-value="0">0</button>
+        <button class="key" type="button" data-action="decimal" aria-label="Decimal point">.</button>
+        <button class="key equals" type="button" data-action="equals" aria-label="Equals">=</button>
+      </div>
+      <p class="hint">Use your keyboard or click the buttons</p>
+    </main>
+  </body>
+</html>
